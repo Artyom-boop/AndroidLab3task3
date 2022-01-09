@@ -12,6 +12,7 @@ class Activity2 : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding = Activity2Binding.inflate(layoutInflater)
         binding.bnToFirst.setOnClickListener {
             finish()
